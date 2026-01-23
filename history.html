@@ -1,0 +1,75 @@
+<!--
+ Copyright 2026 ariefsetyonugroho
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+     https://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">    
+    <title>Riwayat</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title-wrapper"
+            style="display:flex; align-items:center; gap:10px; height:50px;">
+            
+            <img src="src/assets/logo_polkstj.png"
+                style="width:50px; height:50px; object-fit:contain; display:block;">
+
+            <span class="title"
+                style="display:flex; align-items:center; height:50px; line-height:1; margin:0;">
+                History Temperature Ban
+            </span>
+        </div>
+        <div class="header-actions">
+            <button id="history-btn" onclick="window.location.href='index.html'">Home</button>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="history-actions">
+        <button id="export-btn" class="btn btn-primary">Export to Excel</button>
+        <button id="delete-all-btn" class="btn btn-danger">Delete All Data</button>
+    </div>
+
+    <table id="history-table" border="1">
+        <thead>
+            <tr>
+                <th>FL</th>
+                <th>Battery FL</th>
+                <th>Status FL</th>
+                <th>FR</th>
+                <th>Battery FR</th>
+                <th>Status FR</th>
+                <th>RL</th>
+                <th>Battery RL</th>
+                <th>Status RL</th>
+                <th>RR</th>
+                <th>Battery RR</th>
+                <th>Status RR</th>
+                <th>Speed</th>
+                <th>Satelite</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="src/js/config.js"></script>
+    <script src="src/js/history.js"></script>
+</body>
+</html>

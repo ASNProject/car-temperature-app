@@ -1,0 +1,49 @@
+<!--
+ Copyright 2026 ariefsetyonugroho
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+     https://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div class="title">Login</div>
+
+            <div class="input-group">
+                <i class="fa fa-user"></i>
+                <input id="name" type="text" placeholder="Username">
+            </div>
+
+            <div class="input-group">
+                <i class="fa fa-lock"></i>
+                <input id="password" type="password" placeholder="Password">
+            </div>
+
+            <button onclick="login()">Masuk</button>
+
+            <div id="error" class="error"></div>
+        </div>
+    </div>
+    <script src="src/js/config.js"></script>
+    <script src="src/js/auth.js"></script>
+</body>
+</html>
